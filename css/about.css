@@ -1,0 +1,289 @@
+/* ========================================
+   ABOUT HERO
+   ======================================== */
+
+.about-hero {
+    padding: var(--spacing-3xl) 0;
+    background: linear-gradient(135deg, #FFF 0%, #F8F8F8 100%);
+    text-align: center;
+}
+
+.about-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-hero h1 {
+    margin-bottom: var(--spacing-md);
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-light);
+    margin-bottom: 0;
+}
+
+/* ========================================
+   MISSION SECTION
+   ======================================== */
+
+.mission-section {
+    padding: var(--spacing-3xl) 0;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+}
+
+.mission-content h2 {
+    margin-bottom: var(--spacing-md);
+}
+
+.mission-content p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+}
+
+.mission-visual {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+}
+
+.stat-box {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%);
+    padding: var(--spacing-lg);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--color-white);
+    box-shadow: var(--shadow-md);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 1;
+    margin-bottom: var(--spacing-xs);
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* ========================================
+   VALUES SECTION
+   ======================================== */
+
+.values-section {
+    padding: var(--spacing-3xl) 0;
+    background-color: var(--color-bg-light);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.value-card {
+    background-color: var(--color-white);
+    padding: var(--spacing-xl);
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-normal);
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary);
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.value-card h3 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text);
+}
+
+.value-card p {
+    color: var(--color-text-light);
+    line-height: 1.7;
+}
+
+/* ========================================
+   APPROACH SECTION
+   ======================================== */
+
+.approach-section {
+    padding: var(--spacing-3xl) 0;
+}
+
+.approach-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: var(--spacing-lg);
+    position: relative;
+}
+
+.timeline-item:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: 80px;
+    width: 2px;
+    height: calc(100% + var(--spacing-xl));
+    background: linear-gradient(180deg, var(--color-primary) 0%, transparent 100%);
+}
+
+.timeline-number {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    box-shadow: var(--shadow-md);
+    flex-shrink: 0;
+}
+
+.timeline-content {
+    background-color: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-normal);
+}
+
+.timeline-content:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary);
+}
+
+.timeline-content h3 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text);
+}
+
+.timeline-content p {
+    color: var(--color-text-light);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* ========================================
+   CTA SECTION
+   ======================================== */
+
+.cta-section {
+    padding: var(--spacing-3xl) 0;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.cta-content h2 {
+    color: var(--color-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.cta-content p {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--spacing-lg);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-section .btn-primary {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    border-color: var(--color-white);
+}
+
+.cta-section .btn-primary:hover {
+    background-color: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+/* ========================================
+   RESPONSIVE - TABLET
+   ======================================== */
+
+@media (max-width: 768px) {
+    .mission-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-item {
+        grid-template-columns: 60px 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .timeline-item:not(:last-child)::before {
+        left: 30px;
+        top: 60px;
+    }
+
+    .timeline-number {
+        width: 60px;
+        height: 60px;
+        font-size: 1.25rem;
+    }
+}
+
+/* ========================================
+   RESPONSIVE - MOBILE
+   ======================================== */
+
+@media (max-width: 480px) {
+    .about-hero {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .stat-box {
+        padding: var(--spacing-md);
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+
+    .value-card {
+        padding: var(--spacing-md);
+    }
+
+    .timeline-content {
+        padding: var(--spacing-md);
+    }
+}
