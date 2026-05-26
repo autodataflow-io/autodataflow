@@ -4,195 +4,473 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autodataflow - Connecting Suppliers With Qualified Buyers Across GCC and Europe</title>
     <meta name="description"
-        content="Cut operational costs and unlock new revenue opportunities through smart automation and targeted lead generation">
-    <meta property="og:title" content="Autodataflow - Automation & Lead Generation">
-    <meta property="og:description" content="We build lean automations and AI-powered lead generation systems">
+        content="Autodataflow helps innovative companies connect with warm qualified buyers across GCC and Europe through market research, outreach, qualification, and direct commercial introductions.">
+    <meta property="og:title" content="Autodataflow - Connecting Suppliers With Qualified Buyers Across GCC and Europe">
+    <meta property="og:description"
+        content="Autodataflow helps innovative companies connect with warm qualified buyers across GCC and Europe through market research, outreach, qualification, and direct commercial introductions.">
     <meta property="og:type" content="website">
-    <title>Autodataflow - Automation & Lead Generation</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
+    <!-- CSS Links -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
 
-<body>
-    <!-- Navigation -->
+<body class="theme-dark">
+
+    <!-- Navigation Header -->
     <header class="header">
-        <nav class="nav container">
-            <a href="index.html" class="logo">
+        <div class="container nav">
+            <a href="index.html" class="logo" id="headerLogo">
                 <span class="logo-text">Auto<span class="logo-accent">dataflow</span></span>
             </a>
 
             <div class="nav-menu" id="navMenu">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#industries" class="nav-link">Industries</a></li>
+                    <li class="nav-item"><a href="#how-we-work" class="nav-link">How We Work</a></li>
+                    <li class="nav-item"><a href="case-study.html" class="nav-link">Case Study</a></li>
                     <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link btn-primary-nav">Get Started</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="btn-primary-nav">Discuss Market Opportunities</a></li>
                 </ul>
             </div>
 
-            <div class="nav-toggle" id="navToggle">
+            <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-        </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero glow-glow">
+        <div class="hero-grid-bg"></div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Cut Costs. Unlock Revenue. <span class="text-accent">Automate Everything
-                        Else.</span></h1>
-                <p class="hero-subtitle">We build lean automations and AI-powered lead generation systems that free your
-                    team from busywork and fill your pipeline with qualified prospects.</p>
-                <div class="hero-cta">
-                    <a href="portfolio.html" class="btn btn-primary">View Our Work</a>
-                    <a href="contact.html" class="btn btn-secondary">Get Started</a>
+                <h1 class="hero-title text-gradient fade-in">
+                    Connecting Innovative Suppliers With <span class="text-accent">Warm Buyers</span> Across GCC and Europe
+                </h1>
+                <p class="hero-subtitle fade-in">
+                    Autodataflow helps companies identify qualified buyers, validate market demand, and create direct commercial introductions with companies already exploring relevant solutions.
+                </p>
+                <div class="hero-cta fade-in">
+                    <a href="contact.html" class="btn btn-primary btn-large">Discuss Market Opportunities</a>
+                    <a href="#how-we-work" class="btn btn-secondary btn-large">See How We Work</a>
+                </div>
+                <div class="hero-trust-line fade-in">
+                    Focused on EV mobility, infrastructure, hospitality, marine mobility, and sustainable technology sectors.
+                </div>
+
+                <!-- Premium Connection SVG Graphic -->
+                <div class="hero-visual fade-in">
+                    <svg class="connection-map-svg" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Background Grid Nodes (Simulating abstract Europe and GCC regions) -->
+                        <g opacity="0.3">
+                            <!-- Europe Node Cluster -->
+                            <circle cx="200" cy="120" r="4" fill="#3B82F6" />
+                            <circle cx="250" cy="90" r="3" fill="#3B82F6" />
+                            <circle cx="180" cy="160" r="5" fill="#3B82F6" />
+                            <circle cx="150" cy="110" r="3" fill="#3B82F6" opacity="0.5" />
+                            <circle cx="220" cy="180" r="4" fill="#3B82F6" opacity="0.6" />
+                            <text x="140" y="80" fill="#94A3B8" font-family="Outfit" font-size="12" letter-spacing="1">EUROPEAN SUPPLIERS</text>
+                        </g>
+
+                        <g opacity="0.3">
+                            <!-- GCC Node Cluster -->
+                            <circle cx="600" cy="280" r="6" fill="#3B82F6" />
+                            <circle cx="550" cy="250" r="4" fill="#3B82F6" />
+                            <circle cx="640" cy="240" r="3" fill="#3B82F6" />
+                            <circle cx="580" cy="310" r="5" fill="#3B82F6" opacity="0.5" />
+                            <circle cx="660" cy="300" r="4" fill="#3B82F6" opacity="0.7" />
+                            <text x="560" y="210" fill="#94A3B8" font-family="Outfit" font-size="12" letter-spacing="1">GCC BUYERS</text>
+                        </g>
+
+                        <!-- Abstract Connective Network Curves -->
+                        <path d="M 200 120 Q 400 150 600 280" stroke="url(#gradient-line-1)" stroke-width="2.5" stroke-dasharray="8 4" />
+                        <path d="M 250 90 Q 420 120 550 250" stroke="url(#gradient-line-2)" stroke-width="1.5" opacity="0.7" />
+                        <path d="M 180 160 Q 380 220 550 250" stroke="url(#gradient-line-1)" stroke-width="2" opacity="0.8" />
+                        <path d="M 220 180 Q 450 280 600 280" stroke="url(#gradient-line-2)" stroke-width="2" stroke-dasharray="5 5" opacity="0.6" />
+
+                        <!-- Active Connection Pulsing Indicators -->
+                        <g>
+                            <circle cx="400" cy="180" r="8" fill="#3B82F6" opacity="0.3">
+                                <animate attributeName="r" values="6;16;6" dur="3s" repeatCount="indefinite" />
+                                <animate attributeName="opacity" values="0.4;0;0.4" dur="3s" repeatCount="indefinite" />
+                            </circle>
+                            <circle cx="400" cy="180" r="4" fill="#3B82F6" />
+                            <text x="365" y="160" fill="#FFFFFF" font-family="Outfit" font-weight="600" font-size="11" letter-spacing="1">AUTODATAFLOW</text>
+                        </g>
+
+                        <!-- Icons Overlay Placeholder representations -->
+                        <rect x="180" y="100" width="40" height="40" rx="6" fill="#152244" stroke="#3B82F6" stroke-width="1" opacity="0.9" />
+                        <!-- Minimal representation of Supplier icon -->
+                        <path d="M 194 116 L 206 116 L 206 124 L 194 124 Z" stroke="#3B82F6" stroke-width="1.5" />
+                        <circle cx="200" cy="112" r="2.5" stroke="#3B82F6" stroke-width="1.5" />
+
+                        <rect x="580" y="260" width="40" height="40" rx="6" fill="#152244" stroke="#3B82F6" stroke-width="1" opacity="0.9" />
+                        <!-- Minimal representation of Buyer icon -->
+                        <path d="M 594 284 L 606 284 L 602 274 L 598 274 Z" stroke="#3B82F6" stroke-width="1.5" />
+                        <circle cx="600" cy="270" r="3" stroke="#3B82F6" stroke-width="1.5" />
+
+                        <!-- Definitions for gradients -->
+                        <defs>
+                            <linearGradient id="gradient-line-1" x1="200" y1="120" x2="600" y2="280" gradientUnits="userSpaceOnUse">
+                                <stop offset="0%" stop-color="#3B82F6" />
+                                <stop offset="50%" stop-color="#60A5FA" />
+                                <stop offset="100%" stop-color="#3B82F6" />
+                            </linearGradient>
+                            <linearGradient id="gradient-line-2" x1="250" y1="90" x2="550" y2="250" gradientUnits="userSpaceOnUse">
+                                <stop offset="0%" stop-color="#2563EB" />
+                                <stop offset="100%" stop-color="#60A5FA" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Overview -->
-    <section class="services-overview">
+    <!-- Warm Commercial Opportunities Section -->
+    <section class="section warm-opps">
         <div class="container">
-            <h2 class="section-title">What We Do</h2>
-            <p class="section-subtitle">Whether it's 1999 or 2026, every business needs two basic things: cut
-                operational costs and unlock new revenue opportunities.</p>
+            <div class="section-header fade-in">
+                <h2 class="section-title text-gradient">We Deliver Warm Commercial Opportunities - Not Generic Leads</h2>
+                <p class="section-subtitle">
+                    Our focus is not mass outreach or random lead lists. We identify companies already showing interest in relevant products, technologies, or infrastructure projects, qualify the seriousness of the opportunity, and connect both sides directly.
+                </p>
+            </div>
 
-            <div class="services-grid">
-                <!-- Automation -->
-                <div class="service-card">
-
-                    <h3>Process Automation</h3>
-                    <p>Kill the grind: copy-pasting data, filling docs, checking info across tools. We build lean
-                        automations on Apollo.io, Clay, Codex, Claude Code, and n8n so you can focus on what actually moves the needle.</p>
-                    <ul class="service-features">
-                        <li>Eliminate manual data entry</li>
-                        <li>Sync data across tools (CRM, Sheets, Notion)</li>
-                        <li>Build AI agents for repetitive tasks</li>
-                        <li>Auto-generate documents and proposals</li>
-                    </ul>
-                    <a href="services.html#automation" class="service-link">Learn more →</a>
+            <div class="warm-opps-grid fade-in">
+                <!-- Card 1 -->
+                <div class="opp-card">
+                    <div class="opp-num">01</div>
+                    <h3>Buyer Research</h3>
+                    <p>We identify relevant companies, projects, operators, and decision-makers based on your product and target market.</p>
                 </div>
 
-                <!-- Lead Generation -->
-                <div class="service-card">
+                <!-- Card 2 -->
+                <div class="opp-card">
+                    <div class="opp-num">02</div>
+                    <h3>Interest Validation</h3>
+                    <p>We engage potential buyers and validate whether there is genuine commercial interest and a realistic use case.</p>
+                </div>
 
-                    <h3>Lead Generation</h3>
-                    <p>Leadgen isn't broken in 2026 — broken ICPs, cold emails, and untargeted lists are. We fix that
-                        with smart targeting, personalized outreach at scale, and AI that sounds human.</p>
-                    <ul class="service-features">
-                        <li>ICP research & targeting</li>
-                        <li>Personalized outreach at scale</li>
-                        <li>AI-powered email sequences</li>
-                        <li>Track, score, and qualify leads automatically</li>
-                    </ul>
-                    <a href="services.html#leadgen" class="service-link">Learn more →</a>
+                <!-- Card 3 -->
+                <div class="opp-card">
+                    <div class="opp-num">03</div>
+                    <h3>Opportunity Qualification</h3>
+                    <p>We filter out low-quality prospects and focus only on buyers with real business potential.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="opp-card">
+                    <div class="opp-num">04</div>
+                    <h3>Direct Introductions</h3>
+                    <p>Once there is confirmed mutual fit, we connect both sides directly so commercial and technical discussions can continue.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Cases -->
-    <section class="featured-cases">
+    <!-- Industries We Focus On Section -->
+    <section class="section industries" id="industries">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">Real automation workflows that save hours and generate results</p>
+            <div class="section-header fade-in">
+                <h2 class="section-title text-gradient">Industries We Focus On</h2>
+                <p class="section-subtitle">Expert market access built around high-value mobility, green technology, and infrastructure niches.</p>
+            </div>
 
-            <div class="cases-grid">
-                <!-- Case 1 -->
-                <div class="case-card">
-                    <div class="case-tag">Automation</div>
-                    <h3>LinkedIn DM Outreach System</h3>
-                    <p>Automate personalized LinkedIn outreach — from audience definition to first DM. Saves 6–8 hours
-                        per 100 prospects.</p>
-                    <div class="case-stats">
-                        <div class="stat">
-                            <span class="stat-value">+22%</span>
-                            <span class="stat-label">Reply Rate</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value">6-8h</span>
-                            <span class="stat-label">Time Saved</span>
-                        </div>
-                    </div>
-                    <div class="case-tech">
-                        <span class="tech-badge">n8n</span>
-                        <span class="tech-badge">GPT-4</span>
-                        <span class="tech-badge">Apify</span>
-                    </div>
+            <div class="industries-grid fade-in">
+                <!-- Industry 1 -->
+                <div class="industry-card">
+                    <div class="industry-icon">⚡</div>
+                    <h3>EV Mobility</h3>
+                    <p>Electric vehicles, charging, fleet operators, battery swapping, last-mile delivery, and mobility infrastructure.</p>
                 </div>
 
-                <!-- Case 2 -->
-                <div class="case-card">
-                    <div class="case-tag">AI & GPT</div>
-                    <h3>AI Content Factory</h3>
-                    <p>Fully automated article generator — from keyword input to shareable HTML draft in Google Drive.
-                        Comparable to top-tier copywriters.</p>
-                    <div class="case-stats">
-                        <div class="stat">
-                            <span class="stat-value">4-5 min</span>
-                            <span class="stat-label">Per Article</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value">3-4h</span>
-                            <span class="stat-label">Work Saved</span>
-                        </div>
-                    </div>
-                    <div class="case-tech">
-                        <span class="tech-badge">n8n</span>
-                        <span class="tech-badge">GPT-4.5</span>
-                        <span class="tech-badge">Drive API</span>
-                    </div>
+                <!-- Industry 2 -->
+                <div class="industry-card">
+                    <div class="industry-icon">⛵</div>
+                    <h3>Sustainable Marine Mobility</h3>
+                    <p>Hydrogen boats, electric boats, marina transport, waterfront mobility, premium hospitality transportation, eco-tourism concepts.</p>
                 </div>
 
-                <!-- Case 3 -->
-                <div class="case-card">
-                    <div class="case-tag">Sales & CRM</div>
-                    <h3>Automated Onboarding System</h3>
-                    <p>Instant client onboarding after payment. From Stripe event to CRM update and project setup —
-                        under 5 minutes, zero manual work.</p>
-                    <div class="case-stats">
-                        <div class="stat">
-                            <span class="stat-value">&lt;5 min</span>
-                            <span class="stat-label">Onboarding</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value">100%</span>
-                            <span class="stat-label">Consistent</span>
-                        </div>
+                <!-- Industry 3 -->
+                <div class="industry-card">
+                    <div class="industry-icon">🏨</div>
+                    <h3>Hospitality & Waterfront Development</h3>
+                    <p>Hotels, resorts, marinas, tourism operators, waterfront projects, guest transportation, sustainable infrastructure.</p>
+                </div>
+
+                <!-- Industry 4 -->
+                <div class="industry-card">
+                    <div class="industry-icon">🚛</div>
+                    <h3>Fleet & Logistics</h3>
+                    <p>Fleet operators, logistics companies, transportation providers, delivery companies transitioning toward cleaner mobility.</p>
+                </div>
+
+                <!-- Industry 5 -->
+                <div class="industry-card">
+                    <div class="industry-icon">🏗️</div>
+                    <h3>Infrastructure & Emerging Technology</h3>
+                    <p>Infrastructure-related solutions, sustainability-focused technologies, and B2B commercial innovation projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regions Focused Section -->
+    <section class="section regions">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title text-gradient">Focused on GCC and European Markets</h2>
+                <p class="section-subtitle">
+                    We help suppliers connect with qualified buyers across Gulf and European markets, especially where mobility, infrastructure, tourism, sustainability, and technology intersect.
+                </p>
+            </div>
+
+            <div class="regions-grid fade-in">
+                <!-- Region 1 -->
+                <div class="region-card">
+                    <div class="region-scope">TARGET MARKET</div>
+                    <h3>GCC Region</h3>
+                    <p>Direct commercial access to decision-makers and key infrastructure projects across UAE, Saudi Arabia, Qatar, Bahrain, Oman, and Kuwait.</p>
+                </div>
+
+                <!-- Region 2 -->
+                <div class="region-card">
+                    <div class="region-scope">SUPPLIER NETWORK</div>
+                    <h3>Europe</h3>
+                    <p>Connecting innovative manufacturers, advanced suppliers, infrastructure companies, and technology providers looking to expand commercially.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title text-gradient">What We Do</h2>
+                <p class="section-subtitle">Dedicated business development processes and support tools designed to accelerate your B2B commercial timeline.</p>
+            </div>
+
+            <div class="home-services-grid fade-in">
+                <!-- Primary Service -->
+                <div class="home-service-item primary-service">
+                    <div class="home-service-summary">
+                        <span class="home-service-tag">Core Offering</span>
+                        <h3>Buyer-Seller Introductions</h3>
+                        <p>We help suppliers connect directly with qualified buyers already exploring relevant products, technologies, or infrastructure solutions.</p>
+                        <a href="services.html#introductions" class="btn btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.9rem;">View Service Details</a>
                     </div>
-                    <div class="case-tech">
-                        <span class="tech-badge">Stripe</span>
-                        <span class="tech-badge">ClickUp</span>
-                        <span class="tech-badge">Trello</span>
+                    <ul class="home-service-bullets">
+                        <li>Buyer identification</li>
+                        <li>Decision-maker mapping</li>
+                        <li>Opportunity sourcing</li>
+                        <li>Interest qualification</li>
+                        <li>Warm introductions</li>
+                        <li>Commercial coordination</li>
+                        <li>GCC and Europe market access</li>
+                    </ul>
+                </div>
+
+                <!-- Supporting Service 1 -->
+                <div class="home-service-item">
+                    <div class="home-service-summary">
+                        <span class="home-service-tag">Supporting Capability</span>
+                        <h3>Lead Generation & Outreach</h3>
+                        <p>We run targeted outbound campaigns to validate markets, start conversations, and identify serious opportunities.</p>
+                        <a href="services.html#leadgen" class="btn btn-secondary" style="padding: 0.6rem 1.25rem; font-size: 0.9rem;">Learn More</a>
                     </div>
+                    <ul class="home-service-bullets">
+                        <li>LinkedIn outreach</li>
+                        <li>Email campaigns</li>
+                        <li>WhatsApp outreach</li>
+                        <li>Personalized messaging</li>
+                        <li>Follow-up systems</li>
+                        <li>CRM tracking</li>
+                    </ul>
+                </div>
+
+                <!-- Supporting Service 2 -->
+                <div class="home-service-item">
+                    <div class="home-service-summary">
+                        <span class="home-service-tag">Infrastructure</span>
+                        <h3>Automation & AI Workflows</h3>
+                        <p>We build internal systems that support prospect research, outreach operations, reporting, and opportunity management.</p>
+                        <a href="services.html#automation" class="btn btn-secondary" style="padding: 0.6rem 1.25rem; font-size: 0.9rem;">Learn More</a>
+                    </div>
+                    <ul class="home-service-bullets">
+                        <li>Workflow automation</li>
+                        <li>CRM automation</li>
+                        <li>AI-assisted research</li>
+                        <li>Prospect enrichment</li>
+                        <li>Reporting systems</li>
+                        <li>Outreach infrastructure</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work Section -->
+    <section class="section how-we-work" id="how-we-work">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title text-gradient">How Cooperation Works</h2>
+                <p class="section-subtitle">A transparent, stage-by-step engagement model built to identify true alignment and validate intent.</p>
+            </div>
+
+            <!-- Steps timeline -->
+            <div class="timeline fade-in">
+                <div class="timeline-step">
+                    <div class="step-num">STEP 01</div>
+                    <h3>Understand Your Product</h3>
+                    <p>We learn your product, ideal buyers, commercial goals, regions, and technical limitations.</p>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-num">STEP 02</div>
+                    <h3>Map the Market</h3>
+                    <p>We identify relevant companies, projects, and operators that could realistically benefit from your solution.</p>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-num">STEP 03</div>
+                    <h3>Start Conversations</h3>
+                    <p>We engage buyers and test whether there is genuine commercial interest.</p>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-num">STEP 04</div>
+                    <h3>Qualify the Opportunity</h3>
+                    <p>We validate seriousness, use case, timing, and overall fit before making introductions.</p>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-num">STEP 05</div>
+                    <h3>Connect Both Sides</h3>
+                    <p>Once there is confirmed interest, we introduce the opportunity directly to your team.</p>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-num">STEP 06</div>
+                    <h3>Support Further Expansion</h3>
+                    <p>We can continue supporting outreach, reporting, qualification, and additional market expansion efforts.</p>
                 </div>
             </div>
 
-            <div class="section-cta">
-                <a href="portfolio.html" class="btn btn-primary">View All Projects</a>
+            <!-- Supplier Connection flow diagram -->
+            <div class="flow-diagram-container fade-in">
+                <div class="flow-diagram-title">Commercial Connection Flow</div>
+                <svg class="flow-diagram-svg" viewBox="0 0 1000 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Path line background -->
+                    <path d="M 60 60 L 940 60" stroke="#152244" stroke-width="4" />
+                    <!-- Highlight active flow -->
+                    <path d="M 60 60 L 940 60" stroke="url(#flow-line-grad)" stroke-width="4" stroke-dasharray="12 6" />
+
+                    <!-- Nodes -->
+                    <!-- Node 1 -->
+                    <g>
+                        <circle cx="80" cy="60" r="22" fill="#152244" stroke="#3B82F6" stroke-width="2" />
+                        <text x="80" y="64" fill="#FFFFFF" font-family="Outfit" font-size="11" font-weight="600" text-anchor="middle">SUPPLIER</text>
+                    </g>
+
+                    <!-- Arrow 1 -->
+                    <path d="M 130 60 L 140 60" stroke="#3B82F6" stroke-width="2" />
+
+                    <!-- Node 2 -->
+                    <g>
+                        <circle cx="280" cy="60" r="22" fill="#152244" stroke="#3B82F6" stroke-width="2" />
+                        <text x="280" y="64" fill="#3B82F6" font-family="Outfit" font-size="10" font-weight="700" text-anchor="middle">AUTODATAFLOW</text>
+                    </g>
+
+                    <!-- Node 3 -->
+                    <g>
+                        <circle cx="500" cy="60" r="22" fill="#152244" stroke="#3B82F6" stroke-width="2" />
+                        <text x="500" y="64" fill="#FFFFFF" font-family="Outfit" font-size="9" font-weight="600" text-anchor="middle">WARM BUYER</text>
+                    </g>
+
+                    <!-- Node 4 -->
+                    <g>
+                        <circle cx="720" cy="60" r="22" fill="#152244" stroke="#3B82F6" stroke-width="2" />
+                        <text x="720" y="64" fill="#FFFFFF" font-family="Outfit" font-size="9" font-weight="600" text-anchor="middle">INTRODUCTION</text>
+                    </g>
+
+                    <!-- Node 5 -->
+                    <g>
+                        <circle cx="920" cy="60" r="22" fill="#152244" stroke="#3B82F6" stroke-width="2" />
+                        <text x="920" y="64" fill="#FFFFFF" font-family="Outfit" font-size="9" font-weight="600" text-anchor="middle">DISCUSSION</text>
+                    </g>
+
+                    <!-- Connection Lines labels -->
+                    <text x="180" y="45" fill="#94A3B8" font-family="Outfit" font-size="9" text-anchor="middle">Engagement</text>
+                    <text x="390" y="45" fill="#94A3B8" font-family="Outfit" font-size="9" text-anchor="middle">Research & Qualify</text>
+                    <text x="610" y="45" fill="#94A3B8" font-family="Outfit" font-size="9" text-anchor="middle">Mutual Fit</text>
+                    <text x="820" y="45" fill="#94A3B8" font-family="Outfit" font-size="9" text-anchor="middle">Direct Hand-off</text>
+
+                    <defs>
+                        <linearGradient id="flow-line-grad" x1="60" y1="60" x2="940" y2="60" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#3B82F6" />
+                            <stop offset="50%" stop-color="#60A5FA" />
+                            <stop offset="100%" stop-color="#2563EB" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Section Preview -->
+    <section class="section case-preview">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title text-gradient">Featured Case Study</h2>
+                <p class="section-subtitle">Real commercial access delivered. See how we help companies secure traction in new regions.</p>
+            </div>
+
+            <!-- Case Teaser -->
+            <div class="case-teaser fade-in">
+                <div class="case-teaser-info">
+                    <span class="case-tag">Case Study: Contigo Mobility</span>
+                    <h3>Contigo Mobility</h3>
+                    <h4>Helping an EV mobility company connect with warm buyers across the Gulf region.</h4>
+                    <p>
+                        Autodataflow supported Contigo Mobility in identifying and engaging companies across UAE, Saudi Arabia, Qatar, and surrounding Gulf markets interested in EV mobility and fleet solutions.
+                        The outreach focused on logistics operators, fleet companies, hospitality-related transportation, and mobility infrastructure opportunities.
+                    </p>
+                    <a href="case-study.html" class="btn btn-primary">See Full Case Study</a>
+                </div>
+
+                <div class="teaser-results-grid">
+                    <div class="teaser-result-card">
+                        <h5>20+</h5>
+                        <p>Qualified interested companies identified</p>
+                    </div>
+                    <div class="teaser-result-card">
+                        <h5>SQL</h5>
+                        <p>Multiple SQL-stage conversations initiated</p>
+                    </div>
+                    <div class="teaser-result-card">
+                        <h5>Niche</h5>
+                        <p>Logistics, hospitality & mobility sectors</p>
+                    </div>
+                    <div class="teaser-result-card">
+                        <h5>Warm</h5>
+                        <p>Warm commercial discussions launched</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
+    <section class="section cta-banner glow-glow">
         <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Cut Costs and Unlock Revenue?</h2>
-                <p>One automation can personalize emails to 500+ prospects — each sounding like you wrote it by hand.
-                </p>
-                <a href="contact.html" class="btn btn-primary btn-large">Let's Talk</a>
+            <div class="cta-banner-content fade-in">
+                <h2>Ready to Discuss Market Opportunities?</h2>
+                <p>Let's map out your ideal buyers across GCC and Europe, qualify their intent, and set up warm, direct connections.</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Discuss Market Opportunities</a>
             </div>
         </div>
     </section>
@@ -202,35 +480,41 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <span class="logo-text">Auto<span class="logo-accent">dataflow</span></span>
-                    <p>Lean automations and AI-powered lead generation.</p>
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                        <span class="logo-text">Auto<span class="logo-accent">dataflow</span></span>
+                    </a>
+                    <p>Autodataflow connects innovative suppliers with qualified buyers across GCC and Europe.</p>
                 </div>
 
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                        </ul>
-                    </div>
+                <div class="footer-column">
+                    <h4>Market Access</h4>
+                    <ul>
+                        <li><a href="#industries">Industries We Focus On</a></li>
+                        <li><a href="#how-we-work">How Cooperation Works</a></li>
+                        <li><a href="case-study.html">Case Study</a></li>
+                    </ul>
+                </div>
 
-                    <div class="footer-column">
-                        <h4>Get in Touch</h4>
-                        <ul>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
                 <p>&copy; 2026 Autodataflow. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="contact.html">Market Opportunity Discussion</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="js/main.js"></script>
 </body>
 

@@ -4,194 +4,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Autodataflow</title>
     <meta name="description"
-        content="Learn about Autodataflow - We build lean automations and AI-powered lead generation systems">
-    <meta property="og:title" content="About - Autodataflow">
+        content="Autodataflow helps innovative companies connect with warm qualified buyers across GCC and Europe through market research, outreach, qualification, and direct commercial introductions.">
+    <meta property="og:title" content="About Us - Autodataflow">
     <meta property="og:description"
-        content="Our mission is to help businesses cut costs and unlock revenue through smart automation">
+        content="Autodataflow helps innovative companies connect with warm qualified buyers across GCC and Europe through market research, outreach, qualification, and direct commercial introductions.">
     <meta property="og:type" content="website">
-    <title>About - Autodataflow</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
+    <!-- CSS Links -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/about.css">
 </head>
 
-<body>
-    <!-- Navigation -->
+<body class="theme-dark">
+
+    <!-- Navigation Header -->
     <header class="header">
-        <nav class="nav container">
-            <a href="index.html" class="logo">
+        <div class="container nav">
+            <a href="index.html" class="logo" id="headerLogo">
                 <span class="logo-text">Auto<span class="logo-accent">dataflow</span></span>
             </a>
 
             <div class="nav-menu" id="navMenu">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+                    <li class="nav-item"><a href="index.html#industries" class="nav-link">Industries</a></li>
+                    <li class="nav-item"><a href="index.html#how-we-work" class="nav-link">How We Work</a></li>
+                    <li class="nav-item"><a href="case-study.html" class="nav-link">Case Study</a></li>
                     <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link btn-primary-nav">Get Started</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="btn-primary-nav">Discuss Market Opportunities</a></li>
                 </ul>
             </div>
 
-            <div class="nav-toggle" id="navToggle">
+            <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- About Hero -->
     <section class="about-hero">
         <div class="container">
             <div class="about-hero-content">
-                <h1>We Build Systems That <span class="text-accent">Actually Work</span></h1>
-                <p class="hero-subtitle">No fluff. No over-engineering. Just lean automations and smart lead generation
-                    that save time and make money.</p>
+                <h1 class="text-gradient fade-in">We Connect Suppliers With Real Market Opportunities</h1>
+                <p class="about-hero-subtitle fade-in">
+                    Moving innovative tech from initial interest to warm, qualified business discussions.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Mission Section -->
-    <section class="mission-section">
+    <!-- Mission/Overview Section -->
+    <section class="section about-mission">
         <div class="container">
-            <div class="mission-grid">
-                <div class="mission-content">
-                    <h2>Our Mission</h2>
-                    <p>Every business needs two things: cut operational costs and unlock new revenue opportunities.</p>
-                    <p>We do that through automation and AI-powered lead generation. No buzzwords. No empty promises.
-                        Just systems that work.</p>
-                    <p>We've spent years building workflows on Apollo.io, Clay, Codex, Claude Code, n8n, and custom code. We know what works,
-                        what doesn't, and how to build it fast.</p>
+            <div class="about-mission-grid fade-in">
+                <div class="about-mission-text">
+                    <h2>Our Approach</h2>
+                    <p>
+                        Autodataflow is a business development and market access partner focused on helping innovative companies connect with qualified buyers across GCC and Europe.
+                    </p>
+                    <p>
+                        We combine market research, outreach, qualification, automation, and commercial communication to help suppliers move faster from market interest to real business conversations.
+                    </p>
+                    <p>
+                        Our focus is not volume for the sake of volume. We focus on identifying warm commercial opportunities where there is already visible market interest and realistic business potential.
+                    </p>
                 </div>
-                <div class="mission-visual">
-                    <div class="stat-box">
-                        <span class="stat-number">100+</span>
-                        <span class="stat-label">Automations Built</span>
+
+                <div class="about-mission-visual">
+                    <div class="about-stat-row">
+                        <div class="about-stat-lbl">Primary Niche</div>
+                        <div class="about-stat-val">B2B Market Access</div>
                     </div>
-                    <div class="stat-box">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-label">Hours Saved Weekly</span>
+                    <div class="about-stat-row">
+                        <div class="about-stat-lbl">Target Regions</div>
+                        <div class="about-stat-val">GCC & Europe</div>
                     </div>
-                    <div class="stat-box">
-                        <span class="stat-number">1000+</span>
-                        <span class="stat-label">Leads Generated</span>
+                    <div class="about-stat-row">
+                        <div class="about-stat-lbl">Operational Model</div>
+                        <div class="about-stat-val">Direct Introductions</div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Values Section -->
-    <section class="values-section">
-        <div class="container">
-            <h2 class="section-title">What We Stand For</h2>
-            <p class="section-subtitle">Our principles guide every automation we build and every lead gen campaign we
-                run.</p>
-
-            <div class="values-grid">
-                <div class="value-card">
-
-                    <h3>Speed Over Perfection</h3>
-                    <p>Ship fast, iterate faster. We'd rather launch a working MVP in 2 weeks than a "perfect" solution
-                        in 3 months.</p>
-                </div>
-
-                <div class="value-card">
-
-                    <h3>Results Over Activity</h3>
-                    <p>We measure success by outcomes, not hours logged. If it doesn't move the needle, we don't build
-                        it.</p>
-                </div>
-
-                <div class="value-card">
-
-                    <h3>Simplicity Over Complexity</h3>
-                    <p>The best automation is the one you can understand and maintain. No black boxes. No
-                        over-engineering.</p>
-                </div>
-
-                <div class="value-card">
-
-                    <h3>Data Over Assumptions</h3>
-                    <p>We test, measure, and optimize based on real data — not gut feelings or "best practices" from
-                        2019.</p>
-                </div>
-
-                <div class="value-card">
-
-                    <h3>Partnership Over Transactions</h3>
-                    <p>We're not vendors. We're partners who care about your success as much as you do.</p>
-                </div>
-
-                <div class="value-card">
-
-                    <h3>Transparency Over Hype</h3>
-                    <p>We tell you what's possible, what's not, and how much it'll cost. No smoke and mirrors.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Approach Section -->
-    <section class="approach-section">
+    <!-- Principles Section -->
+    <section class="section about-principles">
         <div class="container">
-            <h2 class="section-title">How We Work</h2>
-            <p class="section-subtitle">A simple, proven process that delivers results without the enterprise bloat.</p>
+            <div class="section-header fade-in">
+                <h2 class="section-title text-gradient">Our Core Principles</h2>
+                <p class="section-subtitle">The foundational beliefs that govern how we interact with markets, qualify opportunities, and represent your brand.</p>
+            </div>
 
-            <div class="approach-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-number">01</div>
-                    <div class="timeline-content">
-                        <h3>Discovery</h3>
-                        <p>We dive deep into your workflows, pain points, and goals. What's eating your time? What
-                            opportunities are you missing?</p>
-                    </div>
+            <div class="principles-grid fade-in">
+                <!-- Principle 1 -->
+                <div class="principle-card">
+                    <div class="principle-icon">🎯</div>
+                    <h3>Warm Opportunities Over Cold Databases</h3>
+                    <p>We do not sell static lists. We cultivate real-time interest and establish warm lines of communication with active buyers.</p>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-number">02</div>
-                    <div class="timeline-content">
-                        <h3>Strategy</h3>
-                        <p>We map out the automation or lead gen system. No fancy proposals — just a clear plan with
-                            realistic timelines.</p>
-                    </div>
+                <!-- Principle 2 -->
+                <div class="principle-card">
+                    <div class="principle-icon">📊</div>
+                    <h3>Qualified Conversations Over Vanity Metrics</h3>
+                    <p>We prioritize depth over volume. We measure our success by direct intro quality, not the number of cold emails sent.</p>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-number">03</div>
-                    <div class="timeline-content">
-                        <h3>Build</h3>
-                        <p>We build the system using proven tools and frameworks. You get weekly updates and can test
-                            along the way.</p>
-                    </div>
+                <!-- Principle 3 -->
+                <div class="principle-card">
+                    <div class="principle-icon">🛡️</div>
+                    <h3>Commercial Clarity Over Hype</h3>
+                    <p>We speak the serious language of infrastructure and corporate commercial teams. No buzzwords, no hyperbole, just business metrics.</p>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-number">04</div>
-                    <div class="timeline-content">
-                        <h3>Launch & Optimize</h3>
-                        <p>We launch, monitor, and iterate based on real performance data. Your system gets better over
-                            time.</p>
-                    </div>
+                <!-- Principle 4 -->
+                <div class="principle-card">
+                    <div class="principle-icon">🤝</div>
+                    <h3>Long-Term Partnerships Over One-Off Campaigns</h3>
+                    <p>We work as an extension of your commercial team, helping you build sustained, repeat business presence in expand regions.</p>
+                </div>
+
+                <!-- Principle 5 -->
+                <div class="principle-card">
+                    <div class="principle-icon">🔒</div>
+                    <h3>Confidentiality and Trust</h3>
+                    <p>We operate with high discretion and absolute trust, protecting proprietary technical and commercial info on both sides.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
+    <section class="section cta-banner glow-glow">
         <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Work Together?</h2>
-                <p>Let's talk about your workflows, your goals, and how we can help you save time and make more money.
-                </p>
-                <a href="contact.html" class="btn btn-primary btn-large">Get Started</a>
+            <div class="cta-banner-content fade-in">
+                <h2>Interested in Partnering With Us?</h2>
+                <p>Let's map out your ideal buyers across GCC and Europe, qualify their intent, and set up warm, direct connections.</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Discuss Market Opportunities</a>
             </div>
         </div>
     </section>
@@ -201,35 +156,41 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <span class="logo-text">Auto<span class="logo-accent">dataflow</span></span>
-                    <p>Lean automations and AI-powered lead generation.</p>
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                        <span class="logo-text">Auto<span class="logo-accent">dataflow</span></span>
+                    </a>
+                    <p>Autodataflow connects innovative suppliers with qualified buyers across GCC and Europe.</p>
                 </div>
 
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                        </ul>
-                    </div>
+                <div class="footer-column">
+                    <h4>Market Access</h4>
+                    <ul>
+                        <li><a href="index.html#industries">Industries We Focus On</a></li>
+                        <li><a href="index.html#how-we-work">How Cooperation Works</a></li>
+                        <li><a href="case-study.html">Case Study</a></li>
+                    </ul>
+                </div>
 
-                    <div class="footer-column">
-                        <h4>Get in Touch</h4>
-                        <ul>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
                 <p>&copy; 2026 Autodataflow. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="contact.html">Market Opportunity Discussion</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="js/main.js"></script>
 </body>
 

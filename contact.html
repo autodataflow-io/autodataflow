@@ -4,116 +4,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with Autodataflow - Let's talk about automation and lead generation">
-    <meta property="og:title" content="Contact - Autodataflow">
-    <meta property="og:description" content="Start your automation or lead generation project today">
+    <title>Contact Us - Autodataflow</title>
+    <meta name="description"
+        content="Autodataflow helps innovative companies connect with warm qualified buyers across GCC and Europe through market research, outreach, qualification, and direct commercial introductions.">
+    <meta property="og:title" content="Contact Us - Autodataflow">
+    <meta property="og:description"
+        content="Autodataflow helps innovative companies connect with warm qualified buyers across GCC and Europe through market research, outreach, qualification, and direct commercial introductions.">
     <meta property="og:type" content="website">
-    <title>Contact - Autodataflow</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
+    <!-- CSS Links -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/contact.css">
 </head>
 
-<body>
-    <!-- Navigation -->
+<body class="theme-dark">
+
+    <!-- Navigation Header -->
     <header class="header">
-        <nav class="nav container">
-            <a href="index.html" class="logo">
+        <div class="container nav">
+            <a href="index.html" class="logo" id="headerLogo">
                 <span class="logo-text">Auto<span class="logo-accent">dataflow</span></span>
             </a>
 
             <div class="nav-menu" id="navMenu">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="index.html#industries" class="nav-link">Industries</a></li>
+                    <li class="nav-item"><a href="index.html#how-we-work" class="nav-link">How We Work</a></li>
+                    <li class="nav-item"><a href="case-study.html" class="nav-link">Case Study</a></li>
                     <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link btn-primary-nav active">Get Started</a>
-                    </li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <li class="nav-item"><a href="contact.html" class="btn-primary-nav">Discuss Market Opportunities</a></li>
                 </ul>
             </div>
 
-            <div class="nav-toggle" id="navToggle">
+            <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Contact Hero -->
     <section class="contact-hero">
         <div class="container">
             <div class="contact-hero-content">
-                <h1>Let's Build Something <span class="text-accent">That Works</span></h1>
-                <p class="hero-subtitle">Tell us about your goals. We'll show you how automation or lead generation can
-                    help.</p>
+                <h1 class="text-gradient fade-in">Let’s Discuss Market Opportunities</h1>
+                <p class="contact-hero-subtitle fade-in">
+                    Tell us about your product, target market, and ideal buyers. We’ll explore whether we can help connect you with qualified commercial opportunities.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Form & Details Section -->
     <section class="contact-section">
         <div class="container">
-            <div class="contact-grid-centered">
-                <!-- Contact Info -->
-                <div class="contact-info">
-                    <h3>Other Ways to Reach Us</h3>
+            <div class="contact-grid">
 
-                    <div class="contact-method">
+                <!-- Interactive Form Column -->
+                <div class="contact-form-wrapper fade-in" id="contactFormWrapper">
+                    <h2>Submit a Commercial Inquiry</h2>
+                    <p class="form-description">Complete the details below, and our market access specialists will analyze your profile before our introduction call.</p>
 
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <a href="mailto:max@autodataflow.io">max@autodataflow.io</a>
-                            <p>We typically respond within 24 hours</p>
-                        </div>
+                    <!-- Feedback Alerts -->
+                    <div class="form-response-alert success" id="formSuccessAlert">
+                        <strong>Thank you!</strong> Your inquiry has been received. Our team will review your business profile and contact you within 24 hours to schedule a market discussion.
+                    </div>
+                    <div class="form-response-alert error" id="formErrorAlert">
+                        <strong>Submission failed.</strong> Please fill in all required fields and try again.
                     </div>
 
-                    <div class="contact-method">
-
-                        <div class="contact-details">
-                            <h4>Quick Questions?</h4>
-                            <p>For quick questions, drop a DM on LinkedIn.</p>
-                            <a href="https://www.linkedin.com/in/eugene-kovalev1/?locale=en" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600; color: var(--accentColor); margin-top: 10px; text-decoration: none;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                                </svg>
-                                DM us on LN
-                            </a>
+                    <form class="contact-form" id="marketDiscoveryForm">
+                        
+                        <!-- Interactive Segment Selector -->
+                        <div class="form-selector-group">
+                            <label>What is your primary commercial goal? *</label>
+                            <div class="selector-options">
+                                <div class="selector-option">
+                                    <input type="radio" id="goal-buyers" name="goal" value="Looking for Buyers" checked>
+                                    <label for="goal-buyers">Looking for Buyers</label>
+                                </div>
+                                <div class="selector-option">
+                                    <input type="radio" id="goal-suppliers" name="goal" value="Looking for Suppliers">
+                                    <label for="goal-suppliers">Looking for Suppliers</label>
+                                </div>
+                                <div class="selector-option">
+                                    <input type="radio" id="goal-partners" name="goal" value="Looking for Partners">
+                                    <label for="goal-partners">Looking for Partners</label>
+                                </div>
+                            </div>
                         </div>
+
+                        <!-- Full Name -->
+                        <div class="form-group">
+                            <label for="fullName">Your Name *</label>
+                            <input type="text" id="fullName" name="name" placeholder="John Doe" required>
+                        </div>
+
+                        <!-- Business Email -->
+                        <div class="form-group">
+                            <label for="businessEmail">Business Email *</label>
+                            <input type="email" id="businessEmail" name="email" placeholder="john@company.com" required>
+                        </div>
+
+                        <!-- Company & Website -->
+                        <div class="form-group">
+                            <label for="companyName">Company & Website *</label>
+                            <input type="text" id="companyName" name="company" placeholder="Company Name (website.com)" required>
+                        </div>
+
+                        <!-- Brief Message -->
+                        <div class="form-group">
+                            <label for="messageText">Product Details & Target Buyers *</label>
+                            <textarea id="messageText" name="message" placeholder="Briefly describe your solution, technology, and ideal buyers across Europe or GCC..." required></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary btn-full-width" style="margin-top: 10px;">Book a Market Discussion</button>
+                        
+                        <p class="form-privacy">We respect your data. Your information is protected and kept strictly confidential.</p>
+                    </form>
+                </div>
+
+                <!-- Info Cards Column -->
+                <div class="contact-info-col fade-in">
+                    
+                    <!-- Direct Email Card -->
+                    <div class="contact-method-card">
+                        <h3>Direct Connection</h3>
+                        <p>Have detailed technical materials, partnership briefs, or proposal documents to share?</p>
+                        <a href="mailto:max@autodataflow.io" class="action-link">max@autodataflow.io</a>
                     </div>
 
-                    <div class="contact-method">
-
-                        <div class="contact-details">
-                            <h4>Book a Call</h4>
-                            <p>Prefer to talk? Book a 30-min discovery call to discuss your project.</p>
-                            <a href="#" class="contact-link">Schedule a Call →</a>
-                        </div>
+                    <!-- LinkedIn Direct Card -->
+                    <div class="contact-method-card">
+                        <h3>Quick Questions?</h3>
+                        <p>Skip the form and reach out directly for brief inquiries or instant messaging.</p>
+                        <a href="https://www.linkedin.com/in/eugene-kovalev1/?locale=en" target="_blank" rel="noopener noreferrer" class="action-link">
+                            <svg class="ln-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                            DM us on LN
+                        </a>
                     </div>
 
-                    <div class="faq-section">
-                        <h4>Common Questions</h4>
-                        <div class="faq-item">
-                            <strong>How long does a project take?</strong>
-                            <p>Simple automations: 1-2 weeks. Lead gen campaigns: ongoing monthly retainer.</p>
-                        </div>
-                        <div class="faq-item">
-                            <strong>Do you work with small businesses?</strong>
-                            <p>Yes! If automation or lead gen makes sense for your size, we're in.</p>
-                        </div>
-                        <div class="faq-item">
-                            <strong>What tools do you use?</strong>
-                            <p>Apollo.io, Clay, Codex, Claude Code, n8n, and custom code when needed.</p>
-                        </div>
+                    <!-- Discovery Call Teaser -->
+                    <div class="contact-method-card">
+                        <h3>Our Target Markets</h3>
+                        <p>We actively coordinate intros and analyze pipelines in both directions:</p>
+                        <ul style="color: var(--color-text-dark-muted); font-size: 0.9rem; padding-left: 1.2rem; margin: 0.5rem 0;">
+                            <li style="margin-bottom: 0.3rem;"><strong>European Suppliers:</strong> Seeking market access to the GCC region.</li>
+                            <li><strong>GCC Entities:</strong> Partnering with top-tier international developers.</li>
+                        </ul>
                     </div>
+
                 </div>
 
             </div>
+
+            <!-- FAQ SECTION -->
+            <div class="contact-faq-wrapper fade-in">
+                <div class="contact-faq-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Clear, direct answers about our model, operational territories, and introduction mechanics.</p>
+                </div>
+
+                <div class="faq-accordion">
+                    
+                    <!-- FAQ 1 -->
+                    <details class="faq-item-details">
+                        <summary>How does your approach differ from standard lead generation agencies?</summary>
+                        <div class="faq-item-content">
+                            Standard agencies blast massive cold lists, focusing on quantity. We focus strictly on Buyer-Seller Introductions: identifying companies already showing relevant interest, validating demand, and creating direct warm connections with decision-makers.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 2 -->
+                    <details class="faq-item-details">
+                        <summary>Which target regions do you operate in?</summary>
+                        <div class="faq-item-content">
+                            We specialize in connecting suppliers with buyers across the Gulf Cooperation Council (GCC) countries—including Saudi Arabia, UAE, Qatar, Bahrain, Oman, and Kuwait—and the European continent.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 3 -->
+                    <details class="faq-item-details">
+                        <summary>Which industries do you cover?</summary>
+                        <div class="faq-item-content">
+                            Our primary focus is on sustainable and advanced infrastructure, electric vehicle (EV) mobility, sustainable marine mobility, hospitality and waterfront development, fleet and logistics, and emerging B2B technology.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 4 -->
+                    <details class="faq-item-details">
+                        <summary>What is your introduction mechanism?</summary>
+                        <div class="faq-item-content">
+                            Once we identify and qualify a buyer's immediate business interest, we set up a direct professional introduction (via email or scheduled meeting), providing your team with full context to seamlessly start commercial negotiations.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 5 -->
+                    <details class="faq-item-details">
+                        <summary>Do you offer success-based pricing options?</summary>
+                        <div class="faq-item-content">
+                            Yes, for verified technical suppliers in our key focus areas, we offer hybrid engagement models that include milestone or performance-based incentives linked directly to successful introductions or SQL outcomes.
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -122,37 +225,86 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <span class="logo-text">Auto<span class="logo-accent">dataflow</span></span>
-                    <p>Lean automations and AI-powered lead generation.</p>
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                        <span class="logo-text">Auto<span class="logo-accent">dataflow</span></span>
+                    </a>
+                    <p>Autodataflow connects innovative suppliers with qualified buyers across GCC and Europe.</p>
                 </div>
 
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                        </ul>
-                    </div>
+                <div class="footer-column">
+                    <h4>Market Access</h4>
+                    <ul>
+                        <li><a href="index.html#industries">Industries We Focus On</a></li>
+                        <li><a href="index.html#how-we-work">How Cooperation Works</a></li>
+                        <li><a href="case-study.html">Case Study</a></li>
+                    </ul>
+                </div>
 
-                    <div class="footer-column">
-                        <h4>Get in Touch</h4>
-                        <ul>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
                 <p>&copy; 2026 Autodataflow. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="contact.html">Market Opportunity Discussion</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="js/main.js"></script>
-    <script src="js/contact.js"></script>
+    <script>
+        // Form Submission interceptor for premium feedback experience
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('marketDiscoveryForm');
+            const successAlert = document.getElementById('formSuccessAlert');
+            const errorAlert = document.getElementById('formErrorAlert');
+
+            if (form) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    // Hide any active alerts
+                    successAlert.style.display = 'none';
+                    errorAlert.style.display = 'none';
+
+                    // Gather elements to check basic validations
+                    const name = document.getElementById('fullName').value.trim();
+                    const email = document.getElementById('businessEmail').value.trim();
+                    const company = document.getElementById('companyName').value.trim();
+                    const message = document.getElementById('messageText').value.trim();
+
+                    if (!name || !email || !company || !message) {
+                        errorAlert.style.display = 'block';
+                        errorAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        return;
+                    }
+
+                    // Simulate API post & success state
+                    const btn = form.querySelector('button[type="submit"]');
+                    const origText = btn.textContent;
+                    btn.textContent = 'Processing inquiry...';
+                    btn.disabled = true;
+
+                    setTimeout(() => {
+                        btn.textContent = origText;
+                        btn.disabled = false;
+                        successAlert.style.display = 'block';
+                        form.reset();
+                        successAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }, 1200);
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

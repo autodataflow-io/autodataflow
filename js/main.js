@@ -68,14 +68,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // ========================================
 
 const observerOptions = {
-    threshold: 0.15,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: 0.1,
+    rootMargin: '0px 0px -40px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in');
+            entry.target.classList.add('animated');
             observer.unobserve(entry.target);
         }
     });
@@ -83,7 +83,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll('.service-card, .case-card, .cta-content');
+    const animatedElements = document.querySelectorAll('.fade-in');
     animatedElements.forEach(el => {
         observer.observe(el);
     });
@@ -148,6 +148,6 @@ function debounce(func, wait = 10) {
 }
 
 // Console greeting
-console.log('%c🚀 Autodataflow', 'color: #E31E24; font-size: 24px; font-weight: bold;');
-console.log('%cAutomation & Lead Generation', 'color: #666; font-size: 14px;');
-console.log('%cBuilt with precision and care', 'color: #999; font-size: 12px;');
+console.log('%c🚀 Autodataflow', 'color: #3B82F6; font-size: 24px; font-weight: bold;');
+console.log('%cB2B Market Access & Commercial Connections', 'color: #94A3B8; font-size: 14px;');
+console.log('%cPremium International Business Development Partner', 'color: #64748B; font-size: 12px;');

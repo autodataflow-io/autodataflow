@@ -1,0 +1,182 @@
+/* ==========================================================================
+   AUTODATAFLOW - CASE STUDY SPECIFIC STYLES
+   ========================================================================== */
+
+.case-hero {
+    position: relative;
+    padding: calc(var(--header-height) + var(--spacing-2xl)) 0 var(--spacing-xl) 0;
+    background-color: var(--color-bg-dark-surface);
+    border-bottom: 1px solid var(--color-border-dark);
+}
+
+.case-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.case-hero-tag {
+    display: inline-block;
+    padding: 0.35rem 0.85rem;
+    background-color: var(--color-primary-glow);
+    color: var(--color-primary);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--spacing-sm);
+}
+
+.case-hero h1 {
+    font-size: clamp(2.25rem, 5vw, 3.5rem);
+    color: #FFFFFF;
+    margin-bottom: var(--spacing-sm);
+}
+
+.case-hero-subtitle {
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    color: var(--color-text-dark-muted);
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+/* Main case study layout */
+.case-body {
+    background-color: var(--color-bg-dark);
+}
+
+.case-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    gap: var(--spacing-xl);
+    align-items: start;
+}
+
+/* Story elements */
+.case-story-card {
+    background-color: var(--color-bg-dark-surface);
+    border: 1px solid var(--color-border-dark);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+}
+
+.case-story-card h2 {
+    font-size: 1.75rem;
+    color: #FFFFFF;
+    margin-bottom: var(--spacing-md);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: var(--spacing-sm);
+}
+
+.case-story-card p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--color-text-dark-muted);
+    margin-bottom: var(--spacing-md);
+}
+
+.case-story-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* Case Results Sidebar */
+.case-sidebar {
+    position: sticky;
+    top: calc(var(--header-height) + var(--spacing-md));
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.sidebar-box {
+    background-color: var(--color-bg-dark-surface);
+    border: 1px solid var(--color-border-dark);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+}
+
+.sidebar-box h3 {
+    font-size: 1.35rem;
+    color: #FFFFFF;
+    margin-bottom: var(--spacing-md);
+}
+
+.case-results-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.result-stat-card {
+    background-color: var(--color-bg-dark-card);
+    border: 1px solid var(--color-border-dark);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    transition: border-color var(--transition);
+}
+
+.result-stat-card:hover {
+    border-color: var(--color-primary-hover);
+}
+
+.result-stat-card h4 {
+    font-size: 2rem;
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-bottom: 4px;
+    line-height: 1;
+}
+
+.result-stat-card p {
+    font-size: 0.95rem;
+    color: var(--color-text-dark-muted);
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+/* Tech stack box */
+.tech-stack-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+}
+
+.tech-tag {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 0.4rem 0.9rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+/* Customized visual maps / EV themes inside case studies */
+.case-map-graphic {
+    background-color: var(--color-bg-dark-surface);
+    border: 1px solid var(--color-border-dark);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.case-svg-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .case-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .case-sidebar {
+        position: static;
+    }
+}
